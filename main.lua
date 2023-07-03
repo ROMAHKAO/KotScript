@@ -5,9 +5,9 @@ local getLine = function()
     return read('*l')
 end
 
-local MiniLua = require('mini-lua')
+local Module = require('module')
 
 while 1 do
     local line = getLine()
-    MiniLua.processLine(line)
+    Module.processLine(line)
 end
