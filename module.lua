@@ -1,6 +1,15 @@
-local Module = {}
+local KotScript = {}
 
-Module.processLine = function(line)
-end
+-- the syntax is yet to be determined
 
-return Module
+setmetatable(_G, {
+    __index = function(t, k)
+        if k:match('_.+') then
+            return KotScript[k:gsub('_', '')]
+        end
+    end
+})
+
+KotScript.processLine = function(line) end
+
+return KotScript

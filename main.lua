@@ -1,13 +1,15 @@
 local io = io
 local read = io.read
+local write = io.write
 
 local getLine = function()
     return read('*l')
 end
 
-local Module = require('module')
+local KotScript = require('module')
 
-while 1 do
+while true do
+    write('> ')
     local line = getLine()
-    Module.processLine(line)
+    KotScript.processLine(line)
 end
