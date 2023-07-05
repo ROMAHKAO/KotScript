@@ -14,11 +14,11 @@ my URL = "https://yyyyyyy.info/"
 
 There is no need for things such as semicolons,
 since KotScript can figure out where the statements
-end, on its own.
+end, without any help.
 
 ### Variable types
 
-In KotScript, variables will tend to stick with the datatype of the **first* value.
+In KotScript, variables will tend to stick with the datatype of the **first* assigned value.
 
 Variables will not migrate their types on their own, so the following code will not function:
 
